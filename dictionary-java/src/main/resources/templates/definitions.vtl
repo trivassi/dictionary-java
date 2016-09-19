@@ -1,0 +1,13 @@
+<h1>Definitions!</h1>
+
+#if ($definitions)
+  <ul>
+    #foreach ($definition in $definitions)
+      <li>Name: $definition.getName()</li>
+    #end
+  </ul>
+#else
+  <p>No Definitions!</p>
+#end
+
+<a href="/definitions/new">Add New Definition</a>
