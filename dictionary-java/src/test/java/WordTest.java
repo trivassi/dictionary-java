@@ -17,7 +17,7 @@ public class WordTest {
   @Test
   public void word_getName_String() {
     Word newWord = new Word("hey");
-    assertEquals("hey", newCD.getName());
+    assertEquals("hey", newWord.getName());
   }
 
   @Test
@@ -27,4 +27,5 @@ public class WordTest {
     assertTrue(Word.all().contains(firstWord));
     assertTrue(Word.all().contains(secondWord));
   }
+
 }
