@@ -21,11 +21,17 @@ public class WordTest {
   }
 
   @Test
-  public void all_returnsAllInstancesOfRectangle_true() {
+  public void all_returnsAllInstancesOfWord_true() {
     Word firstWord = new Word("hey");
     Word secondWord = new Word("hello");
     assertTrue(Word.all().contains(firstWord));
     assertTrue(Word.all().contains(secondWord));
+  }
+
+  @Test
+  public void returnsId_int() {
+    Word newWord = new Word("hey");
+    assertEquals(1, newWord.getId());
   }
 
 }
