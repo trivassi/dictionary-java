@@ -54,4 +54,11 @@ public class WordTest {
     assertEquals(newWord, Word.find(newWord.getId()));
   }
 
+  @Test
+  public void ListClearsCorrectly_0(){
+    Word newWord = new Word("hey");
+    Word.clear();
+    assertEquals(0, Word.all().size());
+  }
+
 }
