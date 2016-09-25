@@ -48,4 +48,10 @@ public class WordTest {
     assertTrue(newWord.getDefinitions().contains(testDefinition));
   }
 
+  @Test
+  public void findWord_Word() {
+    Word newWord = new Word("hey");
+    assertEquals(newWord, Word.find(newWord.getId()));
+  }
+
 }
